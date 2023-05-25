@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-tid="elements_examples.meta.title">Stripe Payments</title>
+  <meta data-tid="elements_examples.meta.description" name="description" content="Build beautiful, smart checkout flows.">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon/180x180.png">
+  <link rel="icon" href="img/apple-touch-icon/180x180.png">
+
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/stripe-elements.css" data-rel-css="" />
+
+</head>
+<body>
+  <div class="globalContent">
+    <main>
+    <section class="container-lg">
+
+      <div class="bodycell">
+        <h3 class="common-SubTitle">Stripe - Card capture with intents</h3>
+        <p data-tid="elements_examples.intro.subtitle" class="common-BodyText">This example demonstrates the use of the <a href="https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements">Stripe Card Element</a>.</p>
+      </div><br><br>
+
+
+      <div class="cell example example2" id="example-2">
+
+      <form id="payment-form">
+        <div id="card-element">
+          <!-- Elements will create input elements here -->
+        </div>
+
+        <!-- We'll put the error messages in this element -->
+        <div id="card-errors" role="alert"></div>
+
+        <button id="submit">Submit Payment</button>
+      </form>
+
+
+      <div id="messages" role="alert"></div>
+
+      <div class="caption">
+        <p>For test cards visit <a href="https://stripe.com/docs/testing">Stripe Testing</a></p>
+      </div>
+
+      </div>
+
+      <div class="bodycell">
+        <br>
+        <p data-tid="elements_examples.intro.subtitle" class="common-BodyText"></p>
+      </div>
+
+    </section>
+    </main>
+  </div>
+
+  <!-- Simple localization script. -->
+  <script src="js/l10n.js" data-rel-js></script>
+
+  <!-- Scripts for sample card details form. -->
+  <script src="js/stripe-setup-intents-with-card.js" data-rel-js></script>
+
+</body>
+</html>
